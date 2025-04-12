@@ -1,0 +1,39 @@
+.coaches {
+  @apply py-20 px-4 bg-white;
+}
+
+.coaches-grid {
+  @apply max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16;
+}
+
+.coach-card {
+  @apply bg-white p-6 rounded-xl shadow-lg text-center;
+}
+
+.coach-image {
+  @apply mb-4;
+}
+
+.coach-image img {
+  @apply w-32 h-32 rounded-full mx-auto object-cover;
+}
+
+.coach-info h3 {
+  @apply text-xl font-semibold text-swbs-black;
+}
+
+.coach-info h4 {
+  @apply text-swbs-blue font-medium mb-2;
+}
+
+.coach-info p {
+  @apply text-gray-600 mb-4;
+}
+
+.coach-social {
+  @apply flex justify-center gap-4;
+}
+
+.coach-social a {
+  @apply text-gray-600 hover:text-swbs-blue transition-colors;
+}

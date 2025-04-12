@@ -1,0 +1,41 @@
+.navbar {
+  @apply fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50;
+}
+
+.navbar-container {
+  @apply max-w-7xl mx-auto px-4 py-4 flex justify-between items-center;
+}
+
+.logo {
+  @apply flex items-center gap-4 cursor-pointer;
+}
+
+.logo-text {
+  @apply flex flex-col;
+}
+
+.logo-text h1 {
+  @apply text-2xl font-bold text-swbs-blue;
+}
+
+.logo-text p {
+  @apply text-xs text-swbs-black;
+}
+
+.nav-links {
+  @apply hidden md:flex items-center gap-8;
+}
+
+.nav-links a {
+  @apply text-swbs-black hover:text-swbs-blue font-medium transition-colors;
+}
+
+.mobile-menu {
+  @apply md:hidden text-swbs-black hover:text-swbs-blue transition-colors;
+}
+
+@media (max-width: 768px) {
+  .nav-links.active {
+    @apply fixed inset-0 bg-white flex flex-col items-center justify-center gap-8 z-50;
+  }
+}

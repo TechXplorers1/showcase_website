@@ -1,0 +1,39 @@
+.hero {
+  @apply min-h-screen pt-20 px-4 flex flex-col md:flex-row items-center justify-center gap-12 bg-gradient-to-br from-white to-swbs-light-blue/10;
+}
+
+.hero-content {
+  @apply flex-1 max-w-xl;
+}
+
+.hero-title {
+  @apply text-5xl md:text-6xl font-bold text-swbs-black leading-tight;
+}
+
+.hero-subtitle {
+  @apply text-xl text-gray-600 mt-6;
+}
+
+.hero-cta {
+  @apply flex flex-col sm:flex-row gap-4 mt-8;
+}
+
+.cta-button {
+  @apply px-8 py-4 rounded-full font-medium flex items-center justify-center transition-colors;
+}
+
+.cta-button.primary {
+  @apply bg-swbs-blue text-white hover:bg-swbs-light-blue;
+}
+
+.cta-button.secondary {
+  @apply bg-white text-swbs-blue border-2 border-swbs-blue hover:bg-swbs-blue hover:text-white;
+}
+
+.hero-image {
+  @apply flex-1 max-w-lg;
+}
+
+.hero-image img {
+  @apply w-full h-auto object-cover;
+}

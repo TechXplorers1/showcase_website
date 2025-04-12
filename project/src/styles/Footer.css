@@ -1,0 +1,61 @@
+.footer {
+  @apply bg-swbs-black text-white pt-16 pb-8 relative z-10;
+}
+
+.footer-content {
+  @apply max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12;
+}
+
+.footer-section h3 {
+  @apply text-2xl font-bold text-swbs-blue mb-4;
+}
+
+.footer-section h4 {
+  @apply text-lg font-semibold mb-4;
+}
+
+.footer-section p {
+  @apply text-gray-300 mb-6;
+}
+
+.social-links {
+  @apply flex gap-4;
+}
+
+.social-links a {
+  @apply text-gray-300 hover:text-swbs-blue transition-colors;
+}
+
+.footer-section ul {
+  @apply space-y-2;
+}
+
+.footer-section ul a {
+  @apply text-gray-300 hover:text-swbs-blue transition-colors;
+}
+
+.contact-info {
+  @apply space-y-3;
+}
+
+.contact-info p {
+  @apply flex items-center gap-2 mb-2;
+}
+
+.newsletter-form {
+  @apply flex flex-col gap-3;
+}
+
+.newsletter-form input {
+  @apply px-4 py-2 rounded-lg bg-white/10 border border-white/20 
+         focus:outline-none focus:border-swbs-blue text-white;
+}
+
+.newsletter-form button {
+  @apply px-4 py-2 bg-swbs-blue text-white rounded-lg 
+         hover:bg-swbs-light-blue transition-colors;
+}
+
+.footer-bottom {
+  @apply mt-16 pt-8 border-t border-white/10 text-center text-gray-400;
+}
