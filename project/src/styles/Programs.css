@@ -15,7 +15,7 @@
 }
 
 .program-card {
-  @apply bg-white p-6 rounded-xl shadow-lg border border-gray-100;
+  @apply bg-white p-6 rounded-xl shadow-lg;
 }
 
 .icon-wrapper {
@@ -37,5 +37,5 @@
 
 .program-cta {
   @apply w-full py-2 bg-swbs-blue text-white rounded-lg hover:bg-swbs-light-blue 
-         transition-colors font-medium;
+         transition-colors font-medium border-0;
 }

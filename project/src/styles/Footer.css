@@ -53,7 +53,7 @@
 
 .newsletter-form button {
   @apply px-4 py-2 bg-swbs-blue text-white rounded-lg 
-         hover:bg-swbs-light-blue transition-colors;
+         hover:bg-swbs-light-blue transition-colors border-0;
 }
 
 .footer-bottom {

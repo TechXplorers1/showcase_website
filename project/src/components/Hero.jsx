@@ -2,10 +2,20 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, ChevronRight } from 'lucide-react';
 import '../styles/Hero.css';
+import bg from '../assets/bg.mp4'; 
 
 function Hero() {
   return (
     <section className="hero">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="hero-video"
+        src={bg}
+      />
+      <div className="hero-overlay" />
       <div className="hero-content">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -48,19 +58,6 @@ function Hero() {
           </motion.button>
         </motion.div>
       </div>
-      
-      <motion.div 
-        className="hero-image"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <img 
-          src="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&q=80&w=1200" 
-          alt="Basketball player in action"
-          className="rounded-lg shadow-2xl"
-        />
-      </motion.div>
     </section>
   );
 }

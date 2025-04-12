@@ -38,5 +38,5 @@
 
 .contact-form button {
   @apply w-full py-3 bg-swbs-blue text-white rounded-lg hover:bg-swbs-light-blue 
-         transition-colors font-medium;
+         transition-colors font-medium border-0;
 }

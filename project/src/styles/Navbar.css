@@ -1,41 +1,50 @@
 .navbar {
-  @apply fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50;
+  background: linear-gradient(to right, #ffffff, #e6f0ff); /* soft gradient */
+  backdrop-filter: blur(6px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 100px; /* fixed height */
+  max-height: 100px; /* enforce max height */
+  overflow: hidden;
 }
 
-.navbar-container {
-  @apply max-w-7xl mx-auto px-4 py-4 flex justify-between items-center;
+.nav-bar {
+  height: 100%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.logo {
-  @apply flex items-center gap-4 cursor-pointer;
+.logo-img {
+  height: 60px; /* adjust for a good fit */
+  object-fit: contain;
 }
-
-.logo-text {
-  @apply flex flex-col;
-}
-
-.logo-text h1 {
-  @apply text-2xl font-bold text-swbs-blue;
-}
-
-.logo-text p {
-  @apply text-xs text-swbs-black;
+.small-text {
+  font-size: 1rem;
+  /* font-weight: bold; */
+  color: black;
 }
 
 .nav-links {
-  @apply hidden md:flex items-center gap-8;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-.nav-links a {
-  @apply text-swbs-black hover:text-swbs-blue font-medium transition-colors;
+.nav-item {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.mobile-menu {
-  @apply md:hidden text-swbs-black hover:text-swbs-blue transition-colors;
+.nav-item:hover {
+  color: #007bff;
 }
 
-@media (max-width: 768px) {
-  .nav-links.active {
-    @apply fixed inset-0 bg-white flex flex-col items-center justify-center gap-8 z-50;
-  }
+.mobile-menu-btn {
+  background: transparent;
+  border: none;
+  color: #000;
 }

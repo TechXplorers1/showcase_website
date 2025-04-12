@@ -6,8 +6,10 @@ import Programs from './components/Programs';
 import Events from './components/Events';
 import Coaches from './components/Coaches';
 import Gallery from './components/Gallery';
+import Feedback from './components/Feedback';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
           <Events />
           <Coaches />
           <Gallery />
+          <Feedback />
           <Contact />
         </main>
         <Footer />
